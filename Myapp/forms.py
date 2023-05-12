@@ -42,7 +42,7 @@ class FeedbackForm(forms.ModelForm):
             raise forms.ValidationError('Enter a valid email address(e.g. Example@hello.com')
         return email
     fullname = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Enter your full name ,'}), label="First name and Last name ")
-    feedback = forms.CharField(widget=forms.Textarea(attrs={'placeholder': 'i need your service ,','rows':4, 'cols':15}),
+    feedback = forms.CharField(widget=forms.Textarea(attrs={'placeholder': 'i need your service ,','rows':10, 'cols':25}),
     label="Enter Your Request",
     )
     class Meta:
