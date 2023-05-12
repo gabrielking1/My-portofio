@@ -29,7 +29,7 @@
 
     <link rel="stylesheet" href="/static/assets/css/style.css">
     <link rel="stylesheet" href="/static/assets/css/responsive.css">
-    <script  src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   
     <style>
         alert {
             padding: 1rem;
@@ -821,7 +821,7 @@
     </main>
     
 
-    {% comment %} <script src="{% static 'assets/js/jquery.js' %}"></script> {% endcomment %}
+    <script src="{% static 'assets/js/jquery.js' %}"></script>
     <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'assets/js/owl.carousel.js' %}"></script>
     <script src="{% static 'assets/js/gsap.min.js' %}"></script>
@@ -832,19 +832,7 @@
     <script src="{% static 'assets/js/main.js' %}"></script>
     <script src="{% static 'assets/js/ajax-form.js' %}"></script>
     <script src="{% static 'assets/js/color.js' %}"></script>
-    <script>
-        $(document).ready(function() {
-            // messages timeout for 10 sec 
-            setTimeout(function() {
-                $('.container-flui').fadeOut('slow');
-            }, 10000); // <-- time in milliseconds, 1000 =  1 sec
-    
-            // delete message
-            $('.del-msg').live('click',function(){
-                $('.del-msg').parent().attr('style', 'display:none;');
-            })
-        });
-    </script>
+   
 </body>
 
 </html>

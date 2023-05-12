@@ -30,10 +30,11 @@ def contact(request):
         #     messages.error(request, 'something went wrong')
         #     return redirect('contact')
     else:
+      
         form = FeedbackForm()
         
         
-    return render(request, 'test.html', {'form':form})
+    return render(request, 'contact.html', {'form':form})
 
 
 
